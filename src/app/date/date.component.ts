@@ -9,10 +9,10 @@ export class DateComponent implements OnInit {
 
   dateMessage: string;
   constructor() {
-   setInterval(() => {
-    let currentDate = new Date();
-    this.dateMessage = currentDate.toDateString() + ' ' + currentDate.toLocaleTimeString();
-   },1000);
+    setInterval(() => {
+      let currentDate = new Date();
+      this.dateMessage = currentDate.toDateString() + ' ' + currentDate.toLocaleTimeString();
+    }, 1000);
   }
 
   ngOnInit() {
