@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './address-card/user.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-project';
+  user : User = {
+    name: 'Bob Martin',
+    title: 'SE',
+    address: '520, Colombo 03',
+    phone: ['0112531014', '01137205289']
+  }
 }
