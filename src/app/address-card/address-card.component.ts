@@ -8,10 +8,11 @@ import { User } from './user.model';
 })
 export class AddressCardComponent implements OnInit {
 
- @Input('user') user: User;
+  @Input('user') user: User;
+  isCollapsed: boolean = true;
 
   constructor() {
-   }
+  }
 
   ngOnInit() {
     // this.user = {
@@ -22,5 +23,9 @@ export class AddressCardComponent implements OnInit {
     // };
 
   }
-
+  toggleCollapse() {
+    console.log('Tosgle was calle. Before value :'+this.isCollapsed );
+    this.isCollapsed = !this.isCollapsed;
+    console.log('Tosgle was calle. After value :'+this.isCollapsed );
+  }
 }

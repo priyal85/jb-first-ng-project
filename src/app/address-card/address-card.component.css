@@ -4,6 +4,11 @@ h3 {
   text-align: left;
 }
 
+.left{
+  align-content: left;
+  align-self: baseline;
+}
+
 .address-card {
   border: 1px gray solid;
   padding: 15px;
