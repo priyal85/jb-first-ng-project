@@ -8,10 +8,10 @@ import { User } from './address-card/user.model';
 })
 export class AppComponent {
   title = 'first-project';
-  user : User = {
+  user: User = {
     name: 'Bob Martin',
-    title: 'SE',
+    designation: 'Software Engineer',
     address: '520, Colombo 03',
     phone: ['0112531014', '01137205289']
-  }
+  };
 }
