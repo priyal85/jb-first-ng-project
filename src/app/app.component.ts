@@ -14,4 +14,5 @@ export class AppComponent {
     address: '520, Colombo 03',
     phone: ['0112531014', '01137205289']
   };
+  inputText: string = "Initial Value";
 }
